@@ -1,0 +1,16 @@
+body {
+	position:absolute;
+	min-width: 100%;
+	min-height: 100%;
+}
+header, nav, article {
+	position: relative;
+	width: 100%;
+}
+section {
+	position: absolute;
+	width: 100%;
+}
+aside {
+	position: absolute;
+}
