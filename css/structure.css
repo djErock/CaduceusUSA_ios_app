@@ -2,8 +2,39 @@ body {
 	position:absolute;
 	min-width: 100%;
 	min-height: 100%;
+	z-index: 1;
 }
-header, nav, article {
+header {
+	position:fixed;
+    background: #f5f5f5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #f5f5f5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #f5f5f5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #f5f5f5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #f5f5f5); /* Standard syntax */
+	display:table;
+	hieght: 66px;
+	box-shadow: 0px 1px 2px #888; 
+	padding: 3px 0px;
+	z-index: 1000;
+}
+	header > div {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+	header .menu {
+		width: 25%;
+	}
+	header .logo img {
+		width: 50%;
+	}
+	header .options {
+		width: 25%;
+	}
+main {
+	margin-top: 66px;
+}
+main, article {
 	position: relative;
 	width: 100%;
 }
@@ -12,5 +43,16 @@ section {
 	width: 100%;
 }
 aside {
-	position: absolute;
+	position: fixed;
+	width: 75%;
+	height: 100%;
+	background: #ccc;
+}
+aside.fl-left {
+	top: 0px;
+	left: 0px;
+}
+aside.fl-right {
+	top: 0px;
+	right: 0px;
 }

@@ -1,23 +1,77 @@
-/* CSS Document */
 
-header {
-	display:table;
-	box-shadow: 0px 1px 2px #888; 
-	padding: 3px 0px;
-}
 header > div {
+	font-size: 2em;
+}
+.error404 a img{
+	width: 100%;
+	margin-top: 50px;
+	padding: 0px 10px;
+}
+#top-slider {
+	position: relative;
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+}
+#top-slider img{
+	position: absolute;
+	height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease 0s;
+    -moz-transition: opacity 1s ease 0s;
+    -o-transition: opacity 1s ease 0s;
+    transition: opacity 1s ease 0s;
+}
+#top-slider img.show{
+    opacity: 1;
+}
+#main-nav {
+	position: relative;
+	width: 100%;
+	padding: 15px 10px 5px;
+}
+#main-nav img {
+	width: 100%;
+	padding: 10px 20px;
+}
+#main-nav a{
+	display: table;
+	width: 100%;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+    background: #f5f5f5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f5f5f5, #dfdfdf); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f5f5f5, #dfdfdf); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f5f5f5, #dfdfdf); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f5f5f5, #dfdfdf); /* Standard syntax */
+}
+#main-nav a:hover, #main-nav a:focus {
+	color: #fff; 
+    background: #666; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#666, #333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#666, #333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#666, #333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#666, #333); /* Standard syntax */
+	border:1px solid #999;
+}
+#main-nav span{
 	display: table-cell;
 	vertical-align: middle;
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	width: 95%;
+}
+#main-nav i{
+	display: table-cell;
+	background: #777;
+	color: #fff;
+	vertical-align: middle;
 	text-align: center;
-}
-header .menu {
-	width: 25%;
-	font-size: 2em;
-}
-header img.logo {
-	width: 50%;
-}
-header .options {
-	width: 25%;
-	font-size: 2em;
+	text-decoration: none;
+	width: 5%;
+	border-radius: 14px;
 }

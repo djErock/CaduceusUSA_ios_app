@@ -1,21 +1,25 @@
 {
-  "name": "caduceusiosapp",
-  "version": "2.0.0",
-  "description": "iOS application for Caduceus USA",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Caduceus",
-    "USA",
-    "Angularjs"
-  ],
-  "author": "Erik Grosskurth",
-  "license": "ISC",
-  "dependencies": {
-    "angular": "^1.6.1",
-    "angular-route": "^1.6.1",
-    "jquery": "^3.1.1"
-  }
+	"name": "caduceusiosapp",
+	"version": "2.0.0",
+	"description": "iOS application for Caduceus USA",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"Caduceus",
+		"USA",
+		"Angularjs"
+	],
+	"author": "Erik Grosskurth",
+	"license": "ISC",
+	"dependencies": {
+		"angular": "^1.6.1",
+		"angular-route": "^1.6.1",
+		"jquery": "^3.1.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/djErock/CaduceusUSA_ios_app.git"
+	}
 }

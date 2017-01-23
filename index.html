@@ -10,6 +10,7 @@
 		<link href="css/animate.css" rel="stylesheet" type="text/css" />
 		<link href="css/structure.css" rel="stylesheet" type="text/css" />
 		<link href="css/boilerplate.css" rel="stylesheet" type="text/css" />
+		<link href="css/icon.css" rel="stylesheet" type="text/css" />
 
 		<script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
 		<script src="node_modules/angular-route/angular-route.min.js" type="text/javascript"></script>
@@ -19,16 +20,26 @@
 	</head>
 
 	<body ng-app="iOS">
-		<header>
+		<header ng-controller="headerCtrl">
+		
 			<div class="menu">
-				<span id="menu-toggle">&#9776;</span>
+				<span ng-click="nav_toggle('menu')">&#9776;</span>
 			</div>
+			<aside class="fl-left" datasrc="menu" flyout></aside>
+			
 			<div class="logo">
-				<img class="logo" src="img/Caduceus-USA-Official-Logo.png" alt="Caduceus USA" />
+				<a href="/ios/" alt="Back to Home">
+					<img src="img/Caduceus-USA-Official-Logo.png" alt="Caduceus USA" />
+				</a>
 			</div>
+			
 			<div class="options">
-				<span id="options-toggle">&#9881;</span>
+				<span ng-click="nav_toggle('options')">&#9881;</span>
 			</div>
+			<aside class="fl-right" datasrc="options" flyout></aside>
+			
 		</header>
+		<main ng-view></main>
+		<footer ng-controller="footCtrl"></footer>
 	</body>
 </html>
